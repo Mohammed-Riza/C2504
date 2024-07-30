@@ -1,0 +1,22 @@
+pseudo code: 
+  input "num1"
+  input "num2"
+  initialize Temp
+  temp = num1
+  num1 = num2
+  num2 = temp
+
+pseudo code routine:
+  function swapTwoNumbers(num1, num2)
+  int temp
+  temp = num1
+  num1 = num2
+  num2 = temp
+  return num1, num2
+
+pseudo code test:
+  procedure testSwapTwoNumbers()
+  input num1
+  input num2
+  swapTwoNumbers(num1, num2)
+  print num1, num2
