@@ -1,0 +1,24 @@
+pseudo code :
+  enter number "num"
+  div = num % 3
+    if div == 0
+    num is divisible by 3
+    else
+    num is not divisible by 3
+  
+
+pseudo code routine:
+  Function divisibleBy3(num)
+  div = num % 3
+  if div == 0
+    print (divisible)
+  else
+    print (not divisible)
+  return div
+
+pseudo code routine test:
+  procedure testDivisibleBy3()
+  input num
+  div = divisibleBy3()
+  print div
+  
