@@ -1,0 +1,15 @@
+pseudo code:
+  enter the number "num"
+  square = num * num
+  print "square"
+
+pseudo code routine:
+  function squareOfNumber(num)
+  square = num * num
+  return square
+
+Pseudo code routine testing:
+  function testSquareOfNumber()
+  input num
+  square = squareOfNumber(num)
+  print square
