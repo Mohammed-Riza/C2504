@@ -1,0 +1,89 @@
+4. print series 0, 1, 1, 2, 3, 5, 8, 13, ... N terms 
+    Q10: use for loop
+    Q11: use while loop
+    Q12: use do..while loop
+
+
+
+class fibonnaci
+{
+10: use for loop
+    static void fibonacciforloop(int number)     
+    {
+         int n1=0,n2=1,n3,i;    
+         Console.Write(n1+" "+n2+" ");              
+         for(i=2;i<number;++i)                     
+         {    
+          n3=n1+n2;    
+          Console.Write(n3+" ");    
+          n1=n2;    
+          n2=n3;    
+         }    
+      }  
+    }
+  
+    static void Testfibonacciforloop()
+    {
+      int number;
+      Console.Write("Enter the number of elements: ");    
+      number = int.Parse(Console.ReadLine());  
+      fibonacciforloop(number);
+    }
+11: use while loop
+
+   static void fibonacciwhileloop(int number)     
+    {
+         int n1=0,n2=1,n3,i=2;    
+         Console.Write(n1+" "+n2+" ");
+
+         
+         while(i<number)   
+         {    
+          n3=n1+n2;    
+          Console.Write(n3+" ");    
+          n1=n2;    
+          n2=n3;    
+          ++i;
+         }    
+       
+    }
+    static void Testfibonacciwhileloop()
+    {
+      int number;
+      Console.Write("Enter the number of elements: ");    
+      number = int.Parse(Console.ReadLine());  
+      fibonacciwhileloop(number);
+    }
+
+12: use do..while loop
+
+     static void fibonaccidowhileloop(int number)     
+    {
+         int n1=0,n2=1,n3,i=2;    
+         Console.Write(n1+" "+n2+" "); /
+         {    
+          n3=n1+n2;    
+          Console.Write(n3+" ");    
+          n1=n2;    
+          n2=n3;    
+          ++i;
+         }while(i<number); 
+       
+    }
+
+  static void Testfibonaccidowhileloop()
+    {
+      int number;
+      Console.Write("Enter the number of elements: ");    
+      number = int.Parse(Console.ReadLine());  
+      fibonaccidowhileloop(number);
+    }
+
+    static void Main(string[] args) 
+    {
+        Testfibonacciforloop();
+        Testfibonacciwhileloop();
+        Testfibonaccidowhileloop();
+        Console.ReadKey();
+    }
+}
