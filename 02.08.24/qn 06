@@ -1,0 +1,96 @@
+ print the following pattern 
+        5
+      5 4
+    5 4 3
+  5 4 3 2
+5 4 3 2 1 
+Here, N = number of lines = 5
+
+pseudocode
+function PrintNumTriangleMirroredRightAngle(N)
+    for I = 1; I <= N; I++          
+        for J = 1; J <= N-I; J++     
+            Print "  "                 
+        end for 
+        for J = 1; J <= I; J++       
+            Print J + " "           
+        end for 
+        Print NewLine 
+    end for 
+function TestPrintNumTriangleMirroredRightAngle()
+    Input N 
+    PrintNumTriangleMirroredRightAngle(N)
+
+
+function PrintNumTriangleMirroredRightAngle(N)
+    for I = 1; I <= N; I++  //N times = Number of Lines
+        for J = 1; J <= N-I; J++ //Number of Spaces before Number print
+            Print "  " //Two Spaces, No Newline Printing 
+        end for 
+        for J = 1; J <= I; J++ //Number of Numbers is I times
+            Print J + " "      // Print number and space, no new line 
+        end for 
+        Print NewLine 
+    end for 
+function TestPrintNumTriangleMirroredRightAngle()
+    Input N 
+    PrintNumTriangleMirroredRightAngle(N)
+
+
+function PrintNumTriangleMirroredRightAngle(N) = 5
+    for I = 1; I <= N; I++          
+        for J = 1; J <= N-I; J++    
+            Print "  "                 
+        end for 
+        for J = 1; J <= I; J++     
+            Print J + " "               
+        end for 
+        Print NewLine 
+    end for 
+function TestPrintNumTriangleMirroredRightAngle()
+    Input N 
+    PrintNumTriangleMirroredRightAngle(N)
+
+
+
+
+
+
+C# code:
+
+using System;
+
+class PatternGenerator
+{
+    static void Main()
+    {
+        TestPrintPattern();
+    }
+
+    static void PrintPattern(int N)
+    {
+        
+        for (int i = N; i >= 1; i--)
+        {
+            for (int j = 1; j < i; j++)
+            {
+                Console.Write("  ");
+            }
+            for (int j = i; j <= N; j++)
+            {
+                Console.Write(j + " ");
+            }
+            Console.WriteLine();
+        }
+    }
+
+    static void TestPrintPattern()
+    {
+        Console.WriteLine("Enter the number of lines:");
+        
+        int N = int.Parse(Console.ReadLine());
+        PrintPattern(N);
+        
+    }
+}
+}
