@@ -1,9 +1,9 @@
- print the following pattern 
-        5
-      5 4
-    5 4 3
-  5 4 3 2
-5 4 3 2 1 
+3. print the following pattern 
+        1
+      1 2
+    1 2 3
+  1 2 3 4
+1 2 3 4 5 
 Here, N = number of lines = 5
 
 pseudocode
@@ -51,46 +51,3 @@ function TestPrintNumTriangleMirroredRightAngle()
     Input N 
     PrintNumTriangleMirroredRightAngle(N)
 
-
-
-
-
-
-C# code:
-
-using System;
-
-class PatternGenerator
-{
-    static void Main()
-    {
-        TestPrintPattern();
-    }
-
-    static void PrintPattern(int N)
-    {
-        
-        for (int i = N; i >= 1; i--)
-        {
-            for (int j = 1; j < i; j++)
-            {
-                Console.Write("  ");
-            }
-            for (int j = i; j <= N; j++)
-            {
-                Console.Write(j + " ");
-            }
-            Console.WriteLine();
-        }
-    }
-
-    static void TestPrintPattern()
-    {
-        Console.WriteLine("Enter the number of lines:");
-        
-        int N = int.Parse(Console.ReadLine());
-        PrintPattern(N);
-        
-    }
-}
-}
